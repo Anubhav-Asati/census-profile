@@ -1,0 +1,58 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Log4J Log Messages</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Sat Mar 19 01:49:18 IST 2022<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>1</td>
+<td title="http-nio-8080-exec-3 thread">http-nio-8080-exec-3</td>
+<td title="Level"><font color="#993300"><strong>ERROR</strong></font></td>
+<td title="com.sapient.aem.web.LoginServlet category">com.sapient.aem.web.LoginServlet</td>
+<td title="Message">null</td>
+</tr>
+<tr><td bgcolor="#993300" style="color:White; font-size : xx-small;" colspan="6">java.lang.NullPointerException
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sapient.aem.web.LoginServlet.doGet(LoginServlet.java:34)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:359)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:889)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1735)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/java.lang.Thread.run(Thread.java:834)
+</td></tr>
